@@ -1,0 +1,15 @@
+server:
+  port: 8118
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  thymeleaf:
+    prefix: classpath:/static/pages
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:6666/blogs
+    username: root
+    password: root
+  freemarker: 
+    template-loader-path: classpath:/static/pages/   

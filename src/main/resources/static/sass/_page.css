@@ -1,0 +1,226 @@
+@charset "UTF-8";
+.clearfix:after {
+  content: "​";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.page {
+  width: 65%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.page .left {
+  width: 80%;
+  float: left;
+  padding: 20px 30px;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: #f8f8fd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+}
+.page .left > h1 {
+  margin-bottom: -10px;
+}
+.page .left a:not([title]) {
+  word-break: break-all;
+}
+.page .left ul > h2 {
+
+  color: #6a6b6b;
+}
+.page .left ul li {
+  margin-left: 20px;
+  line-height: 1.8;
+  color: #888888;
+}
+.page .left ul li time {
+  display: inline-block;
+  width: 135px;
+}
+.page .left ul li .title {
+  font-weight: bold;
+  color: #223253;
+  transition: 0.3s ease;
+}
+.page .left ul li .title:hover {
+  color: #4d6dad;
+}
+.page .left ul li i {
+  margin-right: 5px;
+}
+.page .left ul li .categories {
+  padding: 0 15px;
+}
+.page .left ul li .categories i {
+  color: #9e9d9d;
+}
+.page .left ul li .categories a {
+  padding: 0 5px;
+  background-color: #9e9d9d;
+  color: #fff;
+  font-size: 90%;
+  transition: 0.3s ease;
+}
+.page .left ul li .categories a:hover {
+  background-color: #b6b6b9;
+}
+.page .left ul li .pageTag i {
+  color: #c6cbe9;
+}
+.page .left ul li .pageTag a {
+  padding: 0 5px;
+  background-color: #c6cbe9;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 90%;
+  transition: 0.3s ease;
+}
+.page .left ul li .pageTag a:hover {
+  background-color: #c0ddc7;
+}
+.page .anchor {
+  display: none;
+}
+.page .right {
+  float: left;
+  width: 20%;
+  padding-left: 20px;
+  top: 0;
+}
+.page .right .fixed {
+  position: fixed;
+  top: 20px;
+}
+.page .right .scroll-bottom {
+  position: absolute;
+  bottom: 190px;
+}
+.page .right .side {
+  box-sizing: border-box;
+  background-color: #f8f8fd;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+  padding-bottom: 1px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.page .right .side > div {
+  padding: 12px 15px;
+  border-bottom: 1px solid #c0c0c0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.page .right .side a {
+  color: #4d6dad;
+  transition: 0.5s ease;
+}
+.page .right .side a:hover {
+  color: #223253;
+}
+.page .right .content-ul {
+  overflow-y: auto;
+  padding-right: 10px;
+  line-height: 1.8;
+  padding-left: 35px;
+}
+.page .right .content-ul ul {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 770px) {
+  .page {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .page {
+    width: 95%;
+  }
+  .page .left {
+    width: 100%;
+    float: left;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+  .page .left > h1 {
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+  .page .left ul {
+    padding-left: 20px;
+  }
+  .page .left ul > h2 {
+    font-size: 20px;
+  }
+  .page .left ul li {
+    margin: 20px 0;
+    margin-left: 20px;
+  }
+  .page .left ul li time {
+    display: block;
+    width: auto;
+  }
+  .page .left ul li .title {
+    display: block;
+    font-size: 16px;
+  }
+  .page .left ul li .categories {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .page .anchor {
+    display: block;
+    visibility: visible;
+    position: fixed;
+    top: 76px;
+    right: 2.5%;
+    padding: 5px 10px;
+    color: #333;
+    font-size: 15px;
+    background-color: #f8f8fd;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+    opacity: 0.7;
+    transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
+  }
+  .page .anchor-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .page .right {
+    visibility: hidden;
+    position: fixed;
+    float: none;
+    width: auto;
+    max-width: 95%;
+    padding: 0;
+    top: 76px;
+    right: 2.5%;
+    opacity: 0;
+    transform-origin: 100% 0;
+    transform: scale(0.1);
+    transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
+  }
+  .page .right-show {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .page .right-show .content-ul {
+    margin-bottom: 0;
+  }
+  .page .right-show .content-ul > li:last-of-type {
+    margin-bottom: 16px;
+  }
+}

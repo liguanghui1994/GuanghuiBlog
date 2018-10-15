@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>李光辉的技术专栏</title>
+    <meta name="description" content="blog & blog theme🤘">
+
+    <link rel="shortcut icon" href="../lgh.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="icon" href="../lgh.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../sass/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+  <body>
+    <header id="top">
+        <div class="wrapper">
+            <a href=# id="lgh" class="brand">李光辉的技术专栏</a>
+            <small>Diligent Engineer</small>
+            <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+            <nav id="headerNav">
+                <ul>
+                    <li>
+                        <a href=# id="home" class="active">
+                            <i class="fa fa-home"></i>Home
+                        </a>
+                    </li>
+                    <li>      
+                        <a href=# id="archive">
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    <li>   
+                        <a href=# id="category">
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li> 
+                    <li>    
+                        <a href=# id="tag">
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    <li>   
+                        <a href=# id="tool_sharing">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>Tool Sharing
+                        </a>
+                    </li>
+                    <li>   
+                        <a href=# id="open_source">
+                            <i class="fa fa-play"></i>Open Source
+                        </a>
+                    </li> 
+                    <li>
+                        <a href=# id="write">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Write
+                        </a>
+                    </li> 
+                    <li>   
+                        <a href=# id="about_me">
+                            <i class="fa fa-heart"></i>About Me
+                        </a>
+                    </li> 
+                    <!-- <li>
+                    	<input type="text" class="input_search" name="" id="toolber-keyword" autocomplete="off" placeholder="search article">
+                        <a href=# id="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>  -->                      
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主页面，包括内容、最近提交、分类等 -->
+    <div class="page clearfix" index>
+        <div class="left">
+            <!-- insert article here-->
+        </div>
+        <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+        <div class="right">
+            <div class="wrap">
+                <div class="side content" id="side-content">
+                    <div>
+                        Content
+                    </div>
+                    <ul id="content-side" class="content-ul" >     
+                            
+                    </ul>
+                </div>
+
+                <div class="side">
+                    <div>
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        Recent Posts
+                    </div>
+                    <ul id="recentposts" class="content-ul" recent>
+                                   
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                <div class="side ">
+                    <div>
+                        <i class="fa fa-th-list"></i>
+                        Categories
+                    </div>
+                    <ul id="categories-list" class="content-ul" cate>
+                        
+                                           
+                    </ul>
+                </div>
+                <!-- 其他div框放到这里 -->
+                <div class="side">
+                    <div>
+                        <i class="fa fa-tags"></i>
+                        Tags
+                    </div>
+                    <div class="tags-cloud">
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最下方的框 -->
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p class="description">
+                 本站记录我前端之旅的沿途风景！ 
+            </p>
+            <p class="contact">
+                Contact me at: 
+                <a href="https://github.com/Gaohaoyang" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+                <a href="mailto:gaohaoyang126@126.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+                <a href="http://weibo.com/3115521wh" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+                <a href="https://www.zhihu.com/people/gaohaoyang" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+                <a href="https://twitter.com/gaohaoyang126" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+                <a href="https://www.facebook.com/gaohaoyang.water" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+                <a href="https://www.linkedin.com/in/gaohaoyang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            </p>
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+            <p class="power">
+                <span>
+                    Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+                </span>
+                <span>
+                    Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- 一键回到最上方的按钮 -->
+    <div class="back-to-top">
+        <a href="#top" data-scroll>
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+    </div>
+    
+    <!-- 这两个js必须放最后，等页面加载完才可以 -->
+    <script src="../js/header.js" charset="utf-8"></script>
+    <script src="../js/main.js" charset="utf-8"></script>
+    <script src="../js/page_title.js" charset="utf-8"></script>
+    <script src="../js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+
+</body>

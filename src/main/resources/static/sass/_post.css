@@ -1,0 +1,56 @@
+#markdown-toc {
+  display: none;
+}
+
+.page[post] .label {
+  margin-top: 16px;
+  overflow: hidden;
+}
+.page[post] .label .label-card {
+  float: left;
+  margin-right: 15px;
+}
+.page[post] .label .label-card .point {
+  padding: 0 10px;
+  color: #9d9d9d;
+}
+.page[post] .label .label-card i {
+  padding-right: 5px;
+  color: #6b6a6a;
+}
+.page[post] a {
+  color: #4d6dad;
+  transition: 0.5s ease;
+}
+.page[post] a:hover {
+  color: #223253;
+  background-color: #f4efeb;
+}
+.page[post] .left ul > h2 {
+  color: #333;
+}
+.page[post] .left ul li {
+  color: #333;
+  margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .page[post] .left {
+    font-size: 15px;
+  }
+  .page[post] .left h2 {
+    font-size: 24px;
+  }
+  .page[post] .left h3 {
+    font-size: 20px;
+  }
+  .page[post] .left h4 {
+    font-size: 18px;
+  }
+  .page[post] .left h5 {
+    font-size: 16px;
+  }
+  .page[post] .left h6 {
+    font-size: 15px;
+  }
+}
